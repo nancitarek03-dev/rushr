@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="./src/input.css" rel="stylesheet">
+    <title>RushRooms</title>
+</head>
+<body>
+
+    <header class="top-0 left-0 right-0 w-full z-50 px-2 py-2 fixed drop-shadow-sm bg-white">
+        <div class="flex items-center justify-between mr-2 md:mr-10 ml-auto px-3 max-w-8xl ">
+            <!-- logo --> 
+             <a href="#" class="flex items-center gap-3">
+                <img src="./image/logo.svg" alt="rush" class="h-6 w-auto">
+                <span class="hidden md:block font-bold text-xl">RushRooms</span>
+                <span class="hidden md:flex px-2 py-0.5 bg-gradient-to-r from-rose-500 via-red-500 to-orange-400 text-[11px] text-white rounded-full font-bold animate-pulse-3">ثورة التأجير</span>
+             </a>
+
+            <!-- nav -->
+             <div class="flex items-center gap-2 md:gap-5">
+                <a  class=" hidden md:flex items-center gap-1.5 px-3 py-1.5 bg-rose-500 hover:bg-rose-600 text-white text-xl font-bold rounded-full transition hover:scale-105 shadow-sm hover:shadow-md">
+                    <span class="fa-solid fa-plus text-xs"></span>
+                    <span class="font-bold text-xs">Add Product</span>
+                </a>
+                <a  class=" md:hidden flex items-center justify-center gap-2 px-2.5 py-1 bg-rose-500 hover:bg-rose-600 text-white text-xl font-bold rounded-full transition hover:scale-105 shadow-sm hover:shadow-md">
+                    <span class="fa-solid fa-plus text-xs"></span>
+                </a>
+                <a  class=" hidden md:flex items-center justify-center gap-2 px-2.5 py-1 bg-white hover:bg-rose-100 text-gray-500 text-xl font-bold rounded-full transition hover:scale-105 shadow-lg hover:shadow-md hover:text-rose-500 border border-gray-200 hover:border-rose-500">
+                    <span class="fa-solid fa-magnifying-glass text-xs"></span>
+                    <span class="font-bold text-xs">Smart Search</span>
+                </a>
+                 <a  class="md:hidden flex items-center justify-center px-2.5 py-1 bg-white hover:bg-rose-100 text-gray-500 text-xl font-bold rounded-full transition hover:scale-105 shadow-lg">
+                    <span class="fa-solid fa-magnifying-glass text-xs"></span>
+                </a>
+                 <a  class="md:hidden flex w-9 h-9 items-center justify-center hover:bg-gray-100 text-green-600 font-bold rounded-full transition hover:scale-105 hover:text-green-600">
+                    <span class="fa-brands fa-whatsapp text-lg"></span>
+                </a>
+
+                 <a  class=" flex items-center justify-center px-2.5 py-1 bg-white hover:bg-black text-black text-xl font-semibold rounded-full transition hover:scale-105 shadow-lg hover:text-white border border-gray-200">
+                    <span class="text-xs">SAR</span>
+                </a>
+                <a  class=" flex w-9 h-9 items-center justify-center hover:bg-gray-100 text-gray-500 font-bold rounded-full transition hover:scale-105 hover:text-gray-500">
+                    <span class="text-lg">ع</span>
+                </a>
+                <a  class=" hidden md:flex items-center justify-center gap-2 px-2.5 py-1 bg-white hover:bg-rose-100 text-gray-500 text-xl font-bold rounded-full transition hover:scale-105 shadow-lg hover:shadow-md hover:text-rose-500 border border-gray-200 hover:border-rose-500">
+                    <span class="fa-solid fa-circle-user text-xs"></span>
+                    <span class="font-bold text-xs">Login</span>
+                </a>
+                <a  class="md:hidden flex items-center justify-center px-2.5 py-1 bg-white hover:bg-rose-100 text-gray-500 text-xl font-bold rounded-full transition hover:scale-105 shadow-lg border border-gray-200 hover:text-rose-500 hover:border-rose-500">
+                    <span class="fa-solid fa-circle-user text-xs font-medium"></span>
+                </a>
+                <a  class=" flex w-9 h-9 items-center justify-center hover:bg-gray-100 text-gray-500 font-bold rounded-full transition hover:scale-105 hover:text-gray-500">
+                    <span class="fa-solid fa-moon text-lg"></span>
+                </a>
+        </div>
+    </header>
+
+<section id="hero" class="relative py-10 md:py-20 px-4 md:px-6 pt-20 bg-gradient-to-b from-rose-400 to-rose-600">
+    <div class="items-center justify-between max-w-6xl mx-auto">
+        <div class="md:w-1/3 flex justify-center space-y-5 py-5 text-center flex-col">
+            <h1 class="md:text-5xl text-center text-2xl font-bold text-black mt-5">
+                Find  Your  Perfect  Rental
+            </h1>
+            <p class=" text-center text-xl text-gray-500">
+                Thousands of products for rent in one place
+            </p>
+        </div>
+ <div class=" px-10 flex rounded-full border border-gray-200 shadow-lg items-center py-2 mt-5">
+                <a class="flex items-center justify-center">
+                 <span class="fa-solid fa-magnifying-glass flex items-center justify-center px-2 py-1 bg-rose-200 text-rose-300 text-xl font-bold rounded-full shadow-lg "></span>
+                </a>
+                <a class="px-3">
+                <span class=" flex text-xs text-gray-500 ">Smart Search</span>
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for a rental..">
+                </a>
+                <a  class="fa-solid fa-microphone text-xl flex w-9 h-9 items-center justify-center hover:bg-rose-100 text-gray-500 font-bold rounded-full transition hover:scale-105 hover:text-rose-500"></a>
+  <div class="flex gap-5">
+    
+    <div class="flex items-center gap-2 hover:bg-gray-700 border-4 border-indigo-200 border-x-indigo-500 rounded-full">
+        <i class="fa-regular fa-clock w-8 h-8 items-center px-2 text-blue-500 font-bold bg-blue-600 rounded-full hover:bg-blue-700 text-lg"></i>
+        <a class="flex flex-col">
+            <span class="text-gray-400 text-sm font-medium">PERIOD</span>
+            <span class="text-gray-600 text-sm">All</span>
+        </a>
+        <i class="fa-solid fa-angle-up text-gray-400"></i>
+    </div>
+
+    <div class="flex items-center gap-2 ">
+        <i class="fa-solid fa-location-dot w-8 h-8 items-center px-2 rounded-full text-lg"></i>
+        <a class="flex flex-col">
+            <span class="text-gray-400 text-sm font-medium">city</span>
+            <span class="text-gray-600 text-sm">All cities</span>
+        </a>
+        <i class="fa-solid fa-angle-up text-gray-400"></i>
+    </div>
+
+    <a class=" gap-3 px-6 py-2.5 bg-rose-600 hover:bg-rose-900 text-white rounded-full transition hover:scale-105 shadow-lg hover:shadow-md hover:text-white">
+        <span class="fa-solid fa-magnifying-glass text-lg"></span>
+        <span class="text-lg">Search</span>
+    </a>
+</div>
+        </div>
+        </div>
+    <div class="flex items-center justify-center gap-4 mt-5">
+        <a>
+            <i class="fa-solid fa-fire text-orange-600 text-[16px]"></i>
+            <span class="text-gray-400 text-sm">Trending:</span>
+        </a>
+        <a  class="flex items-center justify-center gap-2 px-3 py-1 bg-white hover:bg-rose-100 text-gray-600 rounded-full transition hover:scale-105 shadow-lg hover:shadow-md hover:text-rose-500 border border-gray-200 hover:border-rose-500">
+            <span class="text-sm">cars</span>
+            </a>
+         <a  class="flex items-center justify-center gap-2 px-3 py-1 bg-white hover:bg-rose-100 text-gray-600 rounded-full transition hover:scale-105 shadow-lg hover:shadow-md hover:text-rose-500 border border-gray-200 hover:border-rose-500">
+            <span class="text-sm">Apartments</span>
+            </a>   
+        <a  class="flex items-center justify-center gap-2 px-3 py-1 bg-white hover:bg-rose-100 text-gray-600 rounded-full transition hover:scale-105 shadow-lg hover:shadow-md hover:text-rose-500 border border-gray-200 hover:border-rose-500">
+            <span class="text-sm">Cameras</span>
+            </a>     
+        <a  class="flex items-center justify-center gap-2 px-3 py-1 bg-white hover:bg-rose-100 text-gray-600 rounded-full transition hover:scale-105 shadow-lg hover:shadow-md hover:text-rose-500 border border-gray-200 hover:border-rose-500">
+            <span class="text-sm">Equipment</span>
+            </a>    
+        <a  class="flex items-center justify-center gap-2 px-3 py-1 bg-white hover:bg-rose-100 text-gray-600 rounded-full transition hover:scale-105 shadow-lg hover:shadow-md hover:text-rose-500 border border-gray-200 hover:border-rose-500">
+            <span class="text-sm">Resorts</span>
+            </a>
+        <a  class="flex items-center justify-center gap-2 px-3 py-1 bg-white hover:bg-rose-100 text-gray-600 rounded-full transition hover:scale-105 shadow-lg hover:shadow-md hover:text-rose-500 border border-gray-200 hover:border-rose-500">
+            <span class="text-sm">Bikes</span>
+            </a>    
+    </div>    
+    <div class="flax flex-wrap items-center justify-center mt-9 space-x-6  text-center">
+        <ul class="inline-block">
+            <il class="block font-bold text-2xl md:text-xl">5000+</il>
+            <il class="text-gray-400 text-sm">Products</il>
+        </ul>
+        <ul class="inline-block">
+            <il class="block font-bold text-2xl md:text-xl">60+</il>
+            <il class="text-gray-400 text-sm">Cities</il>
+        </ul>
+        <ul class="inline-block">
+            <il class="block font-bold text-2xl md:text-xl">50k+</il>
+            <il class="text-gray-400 text-sm">Happy Clients</il>
+        </ul>
+    </div>
+    </section>
+
+
+
+
+<section class="py-10 md:py-20 px-4 md:px-6 pt-20">
+<div id="carousel" class="relative w-full" data-carousel="static">
+
+    <div class="relative h-56 overflow-hidden rounded-base md:h-96">
+     
+        <div>
+            <img src="image/112.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+        </div>
+     
+        <div>
+            <img src="image/113.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+        </div>
+     
+        <div>
+            <img src="image/114.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+        </div>
+     
+        <div>
+            <img src="image/115.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+        </div>
+
+        <div>
+            <img src="image/116.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>
